@@ -18,7 +18,7 @@ defmodule ErlfmtFormatterPlugin do
 
   @impl true
   def features(_opts) do
-    [sigils: [], extensions: [".erl", ".hrl", ".yrl"]]
+    [sigils: [], extensions: [".erl", ".hrl"]]
   end
 
   @impl true
