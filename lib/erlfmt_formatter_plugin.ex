@@ -22,7 +22,7 @@ defmodule ErlfmtFormatterPlugin do
   end
 
   @impl true
-  def format(contents, opts) do
+  def format(contents, _opts) do
     case :erlfmt.format_string(String.to_charlist(contents), []) do
       {:ok, formatted_erl, []} ->
         to_string(formatted_erl)
